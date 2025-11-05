@@ -5,26 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tesoro</title>
 
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link   
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet"
-/>
+    />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-
+    <div id="loader">
+        <div id="overlay">
+            <img src="./assets/images/Loading Logo.jpg" alt="">
+        </div>
+    </div>
     <div id="nav">
         <div id="logo">
-            <img src="./assets/images/metalex logo.png" alt="">
-            
+            <img src="./assets/images/Metalex Logo.png" alt="">
+            <h1><span>Metalex</span> <br> Infrasolutions</h1>
         </div>
 
         <div id="nav-2">
             <div id="option1">
-                <h3>About</h3>
                 <h3>Products</h3>
+                <h3>About</h3>
             </div>
             
             <!-- <div id="option2" style="display: none;">
@@ -41,7 +45,7 @@
         </div>
     </div>
     
-    <div id="scroll">
+    <!-- <div id="scroll">
 
         <div id="scroller">
             <h5> <i class="ri-asterisk"></i> Luxury Refined in Every Reflection<i class="ri-asterisk"></i> </h5>
@@ -96,22 +100,23 @@
     
         </div>
          
-    </div>
+    </div> -->
 
-    <div id="main">
-        <div id="page1">
+    <div id="main" data-scroll-container>
+        <div id="page1" data-scroll data-scroll-speed=-1.5>
             <div id="content">
                 <h1>Seamless spaces, crafted by glass</h1>
                 <p>We create elegant glass solutions that elevate your space with style and precision.</p>
             </div>
         </div>
-        <div id="page2">
+
+        <div id="page2" data-scroll>
             <div id="center">
                 <h3>Our Signature Products</h3>
                 <div class="box">
                     <img src="./assets/images/Bathroom glass.png" alt="">
                     <i class="ri-arrow-right-up-line"></i>
-                    <h3>textured glass</h3>
+                    <h3>Premium Shower Encloser</h3>
                     <p>Designer Glass Panels for Luxurious, Shielded Comfort</p>
                     <div id="background"></div>
                 </div>
@@ -119,41 +124,43 @@
                 <div class="box">
                     <img src="./assets/images/Flutted Blur Glass.png" alt="">
                     <i class="ri-arrow-right-up-line"></i>
-                    <h3>Candle Starter Set (Forever Vessel + First Candle Refill)</h3>
+                    <h3>Fluted Sliders Partition</h3>
+                    <p>Create depth, texture, and timeless elegance with fluted sliding partitions</p>
                     <div id="background"></div>
                 </div>
 
                 <div class="box">
                     <img src="./assets/images/Glass Partition.png" alt="">
                     <i class="ri-arrow-right-up-line"></i>
-                    <h3>Candle Starter Set (Forever Vessel + First Candle Refill)</h3>
+                    <h3>Sleek Sliders Partition</h3>
+                    <p>Smooth-glide sliders designed for luxury interiors with clean, uninterrupted lines</p>
                     <div id="background"></div>
                 </div>
 
                 <div class="rectangle">
-                    <img src="./assets/images/Railing.png" alt="">
+                    <img src="./assets/images/Slim profile glass door.png" alt="">
                     <i class="ri-arrow-right-up-line"></i>
-                    <h3>Candle Starter Set (Forever Vessel + First Candle Refill)</h3>
+                    <h3>Slim Profile Glass Door</h3>
                     <div id="background"></div>
                 </div>
             </div>
         </div>
 
       
-        <div id="achivements">
+        <div id="achivements" data-scroll>
             <video src="./MetalexInfra.mp4" autoplay muted loop></video>
         </div>
 
-        <div id="page3">
+        <div id="page3" data-scroll >
             <!-- <h2>Stay up to date</h2> -->
              <h2>Some Stuff You might Like</h2>
             <!-- <button>Follow us on Instagram</button> -->
-            <div id="Gallery">
+            <div id="Gallery" data-scroll data-scroll-speed="-1">
                 <div class="photo">
                     <img src="./assets/images/showcase/Bathroom.png" alt="">
                     <div id="bg">
                         <!-- <i class="ri-instagram-line"></i> -->
-                         <h1>Serenity and clarity</h1>
+                         <h1>Frameless Shower Encloser</h1>
                     </div>
                 </div>
 
@@ -161,7 +168,7 @@
                     <img src="./assets/images/showcase/Entrance.png" alt="">
                     <div id="bg">
                         <!-- <i class="ri-instagram-line"></i> -->
-                         <h1>The Art of Arrival</h1>
+                         <h1>Slim Profile Glass Door</h1>
                     </div>
                 </div>
 
@@ -169,7 +176,7 @@
                     <img src="./assets/images/showcase/Kitchen.png" alt="">
                     <div id="bg">
                         <!-- <i class="ri-instagram-line"></i> -->
-                         <h1>Sophistication served daily.</h1>
+                         <h1>Slim profile shutters</h1>
                     </div>
                 </div>
 
@@ -177,7 +184,7 @@
                     <img src="./assets/images/showcase/Lawn.png" alt="">
                     <div id="bg">
                         <!-- <i class="ri-instagram-line"></i> -->
-                         <h1>Uninterrupted views</h1>
+                         <h1>Syncro-Glass Sliders</h1>
                     </div>
                 </div>
 
@@ -185,7 +192,7 @@
                     <img src="./assets/images/showcase/Office.png" alt="">
                     <div id="bg">
                         <!-- <i class="ri-instagram-line"></i> -->
-                         <h1>Private focus. Shared light</h1>
+                         <h1>Partition Glass Doors</h1>
                     </div>
                 </div>
 
@@ -193,32 +200,24 @@
                     <img src="./assets/images/showcase/Wardrobe.png" alt="">
                     <div id="bg">
                         <!-- <i class="ri-instagram-line"></i> -->
-                         <h1>Curated display. Discreet luxury.</h1>
+                         <h1>Profile Shutters</h1>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="join-mail">
-            <div id="join1">
-                <h3>
-                    Join the Tesoro Mailing List
-                </h3>
-
-                <p>Sign up now for the latest news and offers from Tesoro. Your personal data will be used in line with our Privacy Policy</p>
-            </div>
-            <div id="join2">
-                <input type="text" placeholder="Email Address" name="" id="">
-                <button>Subscribe</button>
-            </div>
-        </div>
         <div id="footer">
             <div id="foot1">
-                <img src="./assets/images/metalex logo.png" alt="">
+               <div id="foot-logo">
+                 <img src="./assets/images/metalex logo.png" alt="">
+                    <h1><span>Metalex</span> <br> Infrasolutions</h1>
+               </div>
                 <div id="social-media">
                     <!-- <i class="ri-twitter-x-line"></i>   
                     <i class="ri-instagram-line"></i>   
                     <i class="ri-tiktok-fill"></i>    -->
+                    <h4>Send us Enquiry at</h4>
+                    <h4 style="cursor: pointer;" onclick="window.location.href='mailto:info@metalexinfra.com'">info@metalexinfra.com</h4>
                 </div>
                 <p>
                     © MetalEx Infra 2025. All rights reserved. 
@@ -233,10 +232,6 @@
                     <h3>
                         Our Products
                     </h3>
-
-                    <h5>Glass blocks & bricks</h5>
-                    <h5>Glass furniture
-                    <h5>Table tops </h5>
                     <h5>Cast glass </h5>
                     <h5>Kitchen shutters </h5>
                    <h5> Wall panelling </h5>
@@ -274,10 +269,20 @@
                 <img src="https://scontent.cdninstagram.com/v/t51.75761-15/486187186_17954093252927518_8671419350149025656_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&_nc_ohc=uhxD-gkhVLcQ7kNvwGLyn74&_nc_oc=AdkOiKqQXU9zn4ebsekiqac6nWKAaqG1rLt6W64h7Y5a9f7VIf3QKIrt5FW1soifVqI&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=fH3bKtqpkIfJn27gJvkgIw&oh=00_AfI8DRBfOxVItLr-ik7JVv5Y0X_gWSLqpQd9ngjNhIxojQ&oe=6823A56B" alt=""> -->
 
             </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4256.921977189126!2d78.19184932764503!3d26.208697810116856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3976c4040f9a5c27%3A0x247d74d7e724214a!2sRoyal%20India%20Art%20Glass%20Concept!5e0!3m2!1sen!2sin!4v1762194853142!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div id="map">
+           <div class="drag-area" role="button" aria-label="Drag your mouse here to show on map">
+                <i class="ri-mouse-line"></i>
+                Drag your mouse here to show on map
+             </div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4256.921977189126!2d78.19184932764503!3d26.208697810116856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3976c4040f9a5c27%3A0x247d74d7e724214a!2sRoyal%20India%20Art%20Glass%20Concept!5e0!3m2!1sen!2sin!4v1762194853142!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </div>
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
 </body>
-</html>
+</html> 
