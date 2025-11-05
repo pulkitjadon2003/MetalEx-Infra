@@ -44,19 +44,19 @@ function loadingAnimations() {
         height: '0',
         width : '0',
         delay:.5,
-        duartion:.4
+        duration:.4
     },"sync")
 
     tl.to(overlay,{
         height: '150vh',
         width: '280vh',
         delay:1,
-        duartion:4,
+        duration:.8,
     },"sync")
 
     tl.to(loader,{
         y:"-100%",
-        delay:.4,
+        duration:.6,
     })
 
 
@@ -81,7 +81,7 @@ function scrollAnimations(){
     tl.from("#page2 #center>h3",{
         opacity:0,
         y:100,
-        duartion:1,
+        duration:.6,
     })
 
     tl.from(".box , .rectangle",{
@@ -116,12 +116,12 @@ function scrollAnimations(){
     tl2.from('#page3 h2',{
         opacity:0,
         y:100,
-        duartion:1,
+        duration:.6,
     })
 
     tl2.from("#page3 #Gallery .photo",{
         opacity:0,
-        duartion:1,
+        duration:.8,
         scale:.9
     })
 
