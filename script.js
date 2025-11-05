@@ -48,8 +48,8 @@ function loadingAnimations() {
     },"sync")
 
     tl.to(overlay,{
-        height: '150vh',
-        width: '280vh',
+        height: '250vh',
+        width: '250vh',
         delay:1,
         duration:.8,
     },"sync")
@@ -161,3 +161,11 @@ function scrollAnimations(){
 locomotive()
 loadingAnimations()
 scrollAnimations()
+
+let lastWidth = window.innerWidth;
+window.addEventListener("resize", () => {
+  if (Math.abs(window.innerWidth - lastWidth) > 100) {
+    location.reload();
+  }
+  lastWidth = window.innerWidth;
+});
