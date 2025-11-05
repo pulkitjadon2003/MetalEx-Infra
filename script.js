@@ -75,7 +75,7 @@ function scrollAnimations(){
             scroller:"#main",
             start:'top 80%',
             end:"top 70%",
-            markers:true,
+            // markers:true,
         }})
 
     tl.from("#page2 #center>h3",{
@@ -98,7 +98,7 @@ function scrollAnimations(){
             scroller:"#main",
             start:'top 80%',
             end:"top 70%",
-            markers:true,
+            // markers:true,
 
     }})
 
@@ -109,7 +109,7 @@ function scrollAnimations(){
             scroller:"#main",
             start:'top 80%',
             end:"top 70%",
-            markers:true,
+            // markers:true,
 
     }})
 
@@ -129,7 +129,7 @@ function scrollAnimations(){
         scrollTrigger:{
             trigger:"#foot1",
             scroller:'#main',
-            markers:true,
+            // markers:true,
             start:'top 80%',
             end:"top 80%"
         }
