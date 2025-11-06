@@ -44,19 +44,19 @@ function loadingAnimations() {
         height: '0',
         width : '0',
         delay:.5,
-        duration:.4
+        duration:.7
     },"sync")
 
     tl.to(overlay,{
         height: '250vh',
         width: '250vh',
         delay:1,
-        duration:.8,
+        duration:1,
     },"sync")
 
     tl.to(loader,{
         y:"-100%",
-        duration:.6,
+        duration:.8,
     })
 
 
@@ -159,7 +159,7 @@ function scrollAnimations(){
 
 
 locomotive()
-// loadingAnimations()
+loadingAnimations()
 scrollAnimations()
 
 let lastWidth = window.innerWidth;
