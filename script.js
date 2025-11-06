@@ -159,7 +159,7 @@ function scrollAnimations(){
 
 
 locomotive()
-loadingAnimations()
+// loadingAnimations()
 scrollAnimations()
 
 let lastWidth = window.innerWidth;
