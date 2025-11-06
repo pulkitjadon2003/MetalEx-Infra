@@ -921,7 +921,7 @@ html {
   position: relative;
   cursor: pointer;
   display: inline-block;
-  margin: -3px -2px;
+  margin: -4px -2px;
   border: none;
   outline: solid rgba(255, 255, 255, 0.418) 1px;
 }
