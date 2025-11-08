@@ -158,9 +158,7 @@ function scrollAnimations(){
 
 
 
-locomotive()
-loadingAnimations()
-scrollAnimations()
+
 
 let lastWidth = window.innerWidth;
 window.addEventListener("resize", () => {
@@ -169,3 +167,9 @@ window.addEventListener("resize", () => {
   }
   lastWidth = window.innerWidth;
 });
+
+document.querySelector("#achivements video").onloadeddata = () => {
+    locomotive()
+    loadingAnimations()
+    scrollAnimations()
+};
