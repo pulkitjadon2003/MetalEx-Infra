@@ -94,8 +94,8 @@ html {
 }
 #loader #overlay {
   overflow: hidden;
-  height: 60vmin;
-  width: 60vmin;
+  height: 0;
+  width: 0;
   background-color: #000;
   border-radius: 100%;
   position: absolute;
