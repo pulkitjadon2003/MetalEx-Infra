@@ -39,16 +39,20 @@ function loadingAnimations() {
     let loader = document.querySelector("#loader")
 
     const tl = gsap.timeline()
+
+
+
     
     tl.from(overlay,{
         height: '0',
         width : '0',
-        delay:.5,
-        duration:.7
+        delay:1,
+        duration:.7,
+
     },"sync")
 
     tl.to(overlay,{
-        height: '250vh',
+        height: '250vh',    
         width: '250vh',
         delay:1,
         duration:1,
